@@ -1,7 +1,7 @@
 baseURL = 'https://www.cocoaheads.tw/'
 locale = 'zh-tw'
 title = '可可頭台北城辦事處'
-theme = 'PaperMod'
+theme = 'papermod'
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
