@@ -30,7 +30,9 @@ jobs:
           extended: false  # 改成 true 如果用了 SCSS
 
       - name: Build
-        run: hugo --minify
+        run: |
+          hugo mod get -u
+          hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
