@@ -3,7 +3,7 @@ name: Deploy Hugo to GitHub Pages
 on:
   push:
     branches: [ main ]  
-  workflow_dispatch:    # 允許手動觸發
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,19 +21,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 如果用了 lastmod 功能需要完整 history
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'  # 或指定版本如 '0.120.0'
-          extended: true  # 如果用了 SCSS，改成 true
+          hugo-version: 'latest'
+          extended: false  # 改成 true 如果用了 SCSS
 
       - name: Build
         run: hugo --minify
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './public'
 
@@ -46,4 +46,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
