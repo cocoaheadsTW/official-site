@@ -1,0 +1,60 @@
+baseURL = 'https://www.cocoaheads.tw/'
+locale = 'zh-tw'
+title = '可可頭台北城辦事處'
+theme = 'PaperMod'
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "CocoaHeads Taipei"
+description = "CocoaHeads Taipei"
+keywords = [ "CocoaHeads", "Taiwan", "Taipei", "Apple", "swift", "objective c", "program", "程式開發" ]
+author = "CocoaHeads Taipei 團隊"
+DateFormat = "2006/1/2"
+disableThemeToggle = false
+ShowReadingTime = false
+ShowShareButton = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.homeInfoParams]
+  Title = "CocoaHeads Taipei"
+  Content = """
+- **CocoaHeads Taipei** 社團聚會目的主題圍繞在 Apple 的 Cocoa Framework，Cocoa Framework 是用來開發 Mac 和 iOS 應用程式的框架。
+- 我們每個月的第二個禮拜四晚上舉辦例行聚會，聚會時成員會分享他們最近在做的專案、程式教學或者 Apple 程式相關的主題分享。
+  """
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://x.com/CocoaHeads_TPE"
+
+  [[params.socialIcons]]
+  name = "threads"
+  url = "https://www.threads.com/@cocoaheads_tpe?hl=zh-tw"
+
+  [[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/groups/cocoaheads.taipei"
+
+  [[params.socialIcons]]
+  name = "youtube"
+  url = "https://www.youtube.com/c/CocoaHeadsTaipei"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/cocoaheadsTW"
